@@ -1,0 +1,116 @@
+    1  git config --global user.name Nathaniel Mohun
+    2  git config --global user.name nmohun@byu.edu
+    3  git config --list
+    4  git config --global init.defaultBranch main
+   33  mkdir git_practice
+   34  cd git_practice/
+   35  git status
+   36  git init
+   37  git status
+   40  rm -rf .git
+   41  git status
+   42  git init
+   43  git status 
+   46  git sta
+   47  git status 
+   48  git add file_1.txt 
+   49  git status 
+   50  git commit -m 'create file_1'
+   51  git status
+   54  git add
+   55  git add file_2.txt 
+   56  git commit 
+   61  cd git_practice/
+   63  git status 
+   64  git commit 
+   65  git commit -m 'create file_2'
+   70  mkdir git_practice
+   71  cd git_practice/
+   72  git init 
+   74  git status
+   77  git status 
+   78  git add file
+   79  git add file_1.txt 
+   80  git add file_2.txt 
+   81  git status 
+   82  git commit -m 'create new files'
+   83  git status 
+   84  git log
+   93  git status 
+   94  git add file_1.txt 
+   95  git commit -m 'edit file_1'
+   96  git status 
+   97  git add file_2.txt 
+   98  git commit -m 'edit file_2'
+   99  git status 
+  100  git log
+  103  git add Readme.md 
+  104  git commit 
+  105  nano .gitignore
+  108  git add .gitignore 
+  109  git commit -m 'add .gitignore'
+  110  git status 
+  111  nano .gitignore
+  112  git status
+  113  git commit -a -m 'updated .gitignore'
+  115  git branch
+  116  git branch features
+  117  git switch features 
+  118  git log 
+  120  git commit -a -m 'add empty file'
+  121  git add new_features.txt 
+  122  git commit -m 'add empty file'
+  123  git log
+  126  git commit -a -m 'update new_features.txt'
+  127  git log
+  128  git status
+  129  git log
+  132  git switch main
+  135* git commit -a -m 'update new_features.txt'
+  136  git switch features 
+  138  git add new_features.txt 
+  139  git commit -m 'update new_features.txt'
+  140  git status
+  141  git reset HEAD~
+  142  git status 
+  144  git status 
+  146  git switch 
+  147  git switch main
+  150  git switch features 
+  152  git switch main
+  153  git status 
+  154  git merge features
+  155  git log
+  158  git add new_features.txt 
+  159  git commit -m 'update new_features.txt'
+  160  git switch features 
+  162  git add new_features.txt 
+  163  git commit -m 'update new_features.txt with new words'
+  165  git switch main
+  166  git merge features 
+  168  git status 
+  169  git log
+  170  git branch -d features 
+  171  git remote add origin git@github.com:zalarez/git-practice-zalarez.git
+  172  git push -u origin main
+  173  git push -u origin main
+  175  mkdir git_practice_peers
+  176  cd git_practice_peers/
+  179  git clone git@github.com:zalarez/git-practice-dlesueur.git
+  181  cd git-practice-dlesueur/
+  184  git branch feature-zalarez
+  187  git status
+  188  git add new_features.txt
+  189  git commit -m 'change new_features,txt'
+  190  git reset HEAD~
+  191  git status
+  193  git status
+  194  git switch feature-zalarez 
+  196  git add new_features.txt
+  197  git commit -m 'change new_features,txt'
+  198  git push origin feature-zalarez 
+  203  cd git_practice
+  205  git status 
+  206  git pull
+  208  git log --oneline > gitlog.txt
+  210   history | grep git > history.txt
